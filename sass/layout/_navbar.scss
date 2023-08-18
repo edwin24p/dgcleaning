@@ -1,0 +1,110 @@
+.navbar{
+    display: flex;
+background-color: $primaryblue;
+padding: 8px 64px;
+position: relative;
+    justify-content: space-between;
+    &__logo{
+        display: flex;
+        align-items: center;
+    }
+   &__image{
+    height: 60%;
+   }
+   &__title{
+    color:white;
+    margin-left: 8px;
+    font-weight: 300;
+   }
+   &__img{
+    height: 100%;
+    width: auto;
+   }
+    &__menu{
+        display:flex;
+        align-items: center;
+
+    }
+    &__hamburger{
+        display: none;
+    }
+    
+    &__link{
+        padding: 10px;
+        color: white;
+    }
+    &__close{
+        color:white;
+        display: none;
+    }
+    &__overlay{
+        display: none;
+        position: fixed;
+        top:0;
+        left:0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 2;
+
+    }
+    &__cta{
+        background-color: $yellow;
+        border:none;
+        padding: 8px 10px;
+        border-radius: 6px;
+        color:white;
+    }
+    @media(max-width: 600px){
+        padding: 8px 16px ;
+       
+        &__hamburger{
+            margin-top: 4px;
+            margin-right: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+
+        }
+        &__line{
+            background-color: white;
+            width: 32px;
+            height: 4px;
+            margin-bottom: 4px;
+            border-radius: 10px;
+        }
+        
+        &__menu{
+            display: none;
+            background-color: black;
+            height: 100vh;
+            position: absolute;
+            top:0;
+            right:0;
+            width:50%;
+            padding: 32px 16px;
+            z-index: 3;
+        }
+        &__close{
+            display: block;
+            cursor: pointer;
+            padding: 8px;
+            font-size: 20px;
+        }
+
+        &__cta{
+            display: none;
+        }
+    }
+
+
+}
+
+@media(max-width:600px){
+    .active{
+        display: block;
+    }
+
+
+}

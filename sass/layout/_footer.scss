@@ -1,0 +1,42 @@
+.footer{
+    background-color: $primaryblue;
+    color:white;
+    &__container{
+        display: flex;
+        padding: 16px 64px;
+    }
+   
+    &__logo{
+        flex:1;
+        display: flex;
+        align-items: center;
+    }
+    &__image{
+        width:40px;
+        height: 40px;
+    }
+    &__img{
+        width:100%;
+        height: 100%;
+    }
+    &__links{
+        flex:1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+    }
+    &__item{
+        margin-left: 8px;
+    }
+    @media(max-width:600px){
+        &__container{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item{
+            margin-left: 12px;
+        }
+    }
+    
+}

@@ -1,0 +1,51 @@
+.about{
+    
+    &__container{
+        display: flex;
+        width: 100vw;
+        background: $secondaryblue;
+        margin-bottom: 32px;
+        
+    }
+    &__image{
+        flex:2;
+        overflow: hidden;
+        
+        
+    }
+    &__img{
+        width: 100%;
+        vertical-align: top;
+        object-fit: cover;
+      
+      
+    }
+    &__title{
+        font-size: 48.83px;
+    }
+    &__info{
+flex:3;
+padding: 96px;
+color:white;
+
+    }
+    &__copy{
+        line-height: 2.5rem;
+    }
+    @media(max-width:1200px){
+        &__container{
+            flex-direction: column;
+        }
+      &__info{
+        padding: 64px;
+      }
+      &__title{
+        text-align: center;
+      }
+        &__image{
+            height:200px;
+
+        }
+
+    }
+}

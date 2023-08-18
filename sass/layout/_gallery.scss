@@ -1,0 +1,32 @@
+.gallery{
+    margin-bottom: 64px;
+&__title{
+    text-align: center;
+    color:$secondaryblue;
+    margin-bottom: 16px;
+    font-size: 48.83px;
+    font-weight: 600;
+}
+    &__container{
+    width:90%;
+    margin:0 auto;
+        display: flex;
+        
+        flex-wrap: wrap;
+        gap: 16px;
+     
+    }
+    &__image{
+
+flex-grow:1 ;
+        width:400px;
+        height:400px;
+    }
+
+    &__img{
+        object-fit: cover;
+        width:100%;
+        height: 100%;
+    }
+
+}
