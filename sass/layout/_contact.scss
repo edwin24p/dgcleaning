@@ -53,3 +53,14 @@ color:white;
         }
     }
 }
+
+.map{
+    &__image{
+        width:100%;
+        overflow: hidden;
+    }
+    &__img{
+        width:130%;
+        object-fit: cover;
+    }
+}

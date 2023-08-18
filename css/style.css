@@ -438,6 +438,16 @@ ul {
   }
 }
 
+.map__image {
+  width: 100%;
+  overflow: hidden;
+}
+.map__img {
+  width: 130%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .footer {
   background-color: #1D7AFC;
   color: white;
